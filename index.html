@@ -1,54 +1,184 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bikash Nepal | Digital Health &amp; Systems Specialist</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --bg: #f8fafc;
-      --surface: #ffffff;
-      --primary: #0f172a;
-      --accent: #0284c7;
-      --accent-soft: #e0f2fe;
-      --text: #334155;
-      --muted: #64748b;
-      --border: #e2e8f0;
-    }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+/* PROFESSIONAL VISUAL REFINEMENT */
 
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-    }
+:root {
+  --dark: #142F40;
+  --dark2: #1B4050;
+  --teal: #287C78;
+  --gold: #C5A46D;
+  --bg: #F4F5F2;
+  --white: #FFFFFF;
+  --text: #344750;
+  --muted: #718087;
+  --border: #E3E8E6;
+}
 
-    header {
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
+/* Typography */
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  letter-spacing: -.1px;
+}
 
-    .nav {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 16px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+h1, h2, h3, h4,
+.brand {
+  font-family: 'Manrope', sans-serif;
+}
 
-    .brand {
-      font-weight: 700;
-      font-size: 1.1
+/* Navigation */
+header {
+  background: rgba(255,255,255,.97);
+  box-shadow: 0 2px 15px rgba(20,47,64,.035);
+}
+
+.nav-links a {
+  font-weight: 500;
+}
+
+.nav-links .nav-contact {
+  background: var(--dark);
+  border-radius: 3px;
+}
+
+/* Hero */
+.hero {
+  background:
+    radial-gradient(circle at 85% 15%,
+      rgba(40,124,120,.22), transparent 35%),
+    linear-gradient(120deg,#142F40 0%,#1B4050 65%,#235C5A 100%);
+}
+
+.hero h1 {
+  font-weight: 800;
+  letter-spacing: -2.2px;
+}
+
+.hero h1 span {
+  color: #86C7B8;
+}
+
+.eyebrow {
+  color: #D8BD8B;
+}
+
+/* Profile photograph */
+.profile-frame {
+  border: 1px solid rgba(255,255,255,.45);
+  border-radius: 5px;
+  box-shadow: 0 25px 65px rgba(0,0,0,.25);
+}
+
+.profile-frame img {
+  border-radius: 2px;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 3px;
+  font-weight: 600;
+  letter-spacing: .1px;
+}
+
+.btn-primary {
+  background: #C5A46D;
+}
+
+.btn-primary:hover {
+  background: #E0C99F;
+}
+
+/* Sections */
+section.content-section {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+.section-label {
+  color: #287C78;
+  letter-spacing: 2px;
+}
+
+.section-title {
+  font-weight: 750;
+  letter-spacing: -1.2px;
+}
+
+/* About */
+.about-highlight {
+  background: linear-gradient(145deg,#142F40,#1B4050);
+  border-radius: 4px;
+}
+
+.about-highlight:before {
+  background: #C5A46D;
+}
+
+/* Expertise cards */
+.expertise-section,
+.insights-section {
+  background: #F4F5F2;
+}
+
+.expertise-card {
+  border: 1px solid #E4E9E6;
+  border-radius: 4px;
+  box-shadow: 0 3px 12px rgba(20,47,64,.025);
+}
+
+.expertise-card:hover {
+  border-color: #A7C8BF;
+  box-shadow: 0 12px 28px rgba(20,47,64,.07);
+}
+
+.card-number {
+  color: #A88750;
+}
+
+/* Experience */
+.experience-details {
+  border-left-color: #C5D9D1;
+}
+
+/* Contributions */
+.contribution-section {
+  background: linear-gradient(130deg,#142F40,#1B4050);
+}
+
+.contribution h3 {
+  color: #D8BD8B;
+}
+
+/* Contact */
+.contact-section {
+  background: #EDF2EF;
+}
+
+.contact-links a {
+  border-radius: 3px;
+}
+
+.contact-links a:hover {
+  background: #287C78;
+}
+
+/* Footer */
+footer {
+  background: #102532;
+}
+
+/* Consistent transitions */
+a, button, .expertise-card {
+  transition: all .25s ease;
+}
+
+/* Mobile refinement */
+@media(max-width:680px) {
+  section.content-section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .hero h1 {
+    letter-spacing: -1.5px;
+  }
+}
